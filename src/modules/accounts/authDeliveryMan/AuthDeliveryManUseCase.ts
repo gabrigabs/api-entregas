@@ -33,7 +33,7 @@ export class AuthDeliveryManUseCase{
             throw new Error('Senha ou Usuario errado');
         }
 
-        const token = sign({username}, '3f0e079bae9bb2fa26b411c85dfc8988', {
+        const token = sign({username}, 's6d56s5d65s62f3d2g3der', {
             subject: deliveryMan.id,
             expiresIn: '1d',
         })
