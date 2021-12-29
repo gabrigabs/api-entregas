@@ -5,8 +5,6 @@ export class UpdateDeliveryManController{
     async handle(req: Request, res: Response): Promise<Response> {
         const {id_deliveryman} = req;
         const { id: id_delivery } = req.params;
-        console.log(req);
-        console.log(id_delivery);
 
         const updateDeliveryManUseCase = new UpdateDeliveryManUseCase();
 
